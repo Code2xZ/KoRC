@@ -1,4 +1,4 @@
-# KoRC - Korad Remote COntrol
+# KoRC - Korad Remote Control
 KoRC - free software for controlling the Korad KD3305P power supply from a computer with Windows 7/8/10/11.It can be used as a replacement for software provided by the manufacturer, which requires the installation of the Labview environment to work.
 
 ## Features
