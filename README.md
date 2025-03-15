@@ -43,10 +43,14 @@ The program requires at least .NET Framework version 4.7.2 to run. In Windows ve
 NOTE: To connect via LAN, it is necessary to add rules for incoming and outgoing UDP connections on port 18190 (the default application port) to the Windows firewall before configuration. This can be done, for example, by running the command line (CMD) with administrator rights and entering the commands:
 
 for incoming connection:
->netsh advfirewall firewall add rule name="KoRC_UDP_port" dir=in action=allow protocol=UDP localport=18190
+```
+netsh advfirewall firewall add rule name="KoRC_UDP_port" dir=in action=allow protocol=UDP localport=18190
+```
 
 for outgoing connection:
->netsh advfirewall firewall add rule name="KoRC_UDP_port" dir=out action=allow protocol=UDP localport=18190
+```
+netsh advfirewall firewall add rule name="KoRC_UDP_port" dir=out action=allow protocol=UDP localport=18190
+```
 
 * connect the Korad power supply via USB as above. (Only the first time to upload IP addresses to the device)
 * complete the LAN connection parameters:
