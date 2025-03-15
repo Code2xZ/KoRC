@@ -8,7 +8,7 @@ KoRC - free software for controlling the Korad KD3305P power supply from a compu
 
 ## Installation
 Installation is not required. Simply:
-* download
+* [download](https://github.com/Code2xZ/KoRC/releases/download/KoRC/korc-1_0.zip)
 * unpack the ZIP archive
 * run
 
