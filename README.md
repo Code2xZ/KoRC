@@ -17,6 +17,12 @@ Installation is not required. Simply:
 The program requires at least .NET Framework version 4.7.2 to run. In Windows versions lower than 10, its installation may be necessary. The "Offline" installer can be downloaded from here.
 [download .NET](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net481-offline-installer)
 
+## Donations
+
+The program is released under a freeware license.
+You can use it for free, and if you like it, please consider making a donation to its development.
+[Make a donation](https://korc.code-zz.eu/datki)
+
 # Manual
 
 ### Keyboard shortcuts
