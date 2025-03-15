@@ -2,7 +2,7 @@
 KoRC - free software for controlling the Korad KD3305P power supply from a computer with Windows 7/8/10/11.It can be used as a replacement for software provided by the manufacturer, which requires the installation of the Labview environment to work.
 
 ## Features
-* power supply connection via USB or LAN
+* connection via USB or LAN
 * two-way communication: computer <-> power supply
 * ability to save voltage and current settings
 
@@ -15,7 +15,7 @@ Installation is not required. Simply:
 ## Requirements
 
 The program requires at least .NET Framework version 4.7.2 to run. In Windows versions lower than 10, its installation may be necessary. The "Offline" installer can be downloaded from here.
-[pobierz .NET](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net481-offline-installer)
+[download .NET](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net481-offline-installer)
 
 # Manual
 
