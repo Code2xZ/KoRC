@@ -1,0 +1,70 @@
+<html lang="pl">
+  <head></head>
+  <body>
+<h1 id="korc-korad-remote-control">KoRC - Korad Remote Control</h1>
+<p>KoRC - free software for controlling the Korad KD3305P power supply from a computer with Windows 7/8/10/11. It can be used as a replacement for software provided by the manufacturer, which requires the installation of the Labview environment to work.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>connection via USB or LAN</li>
+<li>two-way communication: computer &lt;-&gt; power supply</li>
+<li>ability to save voltage and current settings</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Installation is not required. Simply:</p>
+<ul>
+<li><a href="https://github.com/Code2xZ/KoRC/releases/download/KoRC/korc-1_0.zip">download</a></li>
+<li>unpack the ZIP archive</li>
+<li>run</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<p>The program requires at least .NET Framework version 4.7.2 to run. In Windows versions lower than 10, its installation may be necessary. The &quot;Offline&quot; installer can be downloaded from here.
+<a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net481-offline-installer">download .NET</a></p>
+<h2 id="donations">Donations</h2>
+<p>The program is released under a freeware license.
+You can use it for free, and if you like it, please consider making a donation to its development.
+<a href="https://korc.code-zz.eu/datki">Make a donation</a></p>
+<h1 id="manual">Manual</h1>
+<h3 id="keyboard-shortcuts">Keyboard shortcuts</h3>
+<ul>
+<li>CTRL+1 - selection of the voltage setting field for CHANNEL 1</li>
+<li>CTRL+2 - selection of the current setting field for CHANNEL 1</li>
+<li>CTRL+3 - selection of the voltage setting field for CHANNEL 2</li>
+<li>CTRL+4 - selection of the current setting field for CHANNEL 2</li>
+<li>CTRL+NUMPAD 1 - turn on/off CHANNEL 1</li>
+<li>CTRL+NUMPAD 2 - turn on/off CHANNEL 2</li>
+<li>CTRL+NUMPAD 0 - turn on/off both channels</li>
+</ul>
+<h3 id="connection-via-usb-">Connection via USB:</h3>
+<ul>
+<li>Connect the Korad power supply to the USB port</li>
+<li>turn it on</li>
+<li>install the drivers provided by the manufacturer. Unless they were installed previously</li>
+<li>in the CONFIG tab, select USB in the CONNECTION TYPE field</li>
+<li>In the &quot;COM port&quot; field, enter the port number assigned to the device (e.g. com3). You can check it in the &quot;Device Manager&quot; in the &quot;COM &amp; LPT Ports&quot; section</li>
+<li>click SAVE &amp; APPLY</li>
+</ul>
+<h2 id="connection-via-lan-">Connection via LAN:</h2>
+<p>NOTE: To connect via LAN, it is necessary to add rules for incoming and outgoing UDP connections on port 18190 (the default application port) to the Windows firewall before configuration. This can be done, for example, by running the command line (CMD) with administrator rights and entering the commands:</p>
+<p>for incoming connection:</p>
+<pre><code>netsh advfirewall firewall add rule <span class="hljs-attr">name="KoRC_UDP_port"</span> <span class="hljs-attr">dir=in</span> <span class="hljs-attr">action=allow</span> <span class="hljs-attr">protocol=UDP</span> <span class="hljs-attr">localport=18190</span>
+</code></pre><p>for outgoing connection:</p>
+<pre><code>netsh advfirewall firewall add rule <span class="hljs-attr">name="KoRC_UDP_port"</span> <span class="hljs-attr">dir=out</span> <span class="hljs-attr">action=allow</span> <span class="hljs-attr">protocol=UDP</span> <span class="hljs-attr">localport=18190</span>
+</code></pre><ul>
+<li>connect the Korad power supply via USB as above. (Only the first time to upload IP addresses to the device)</li>
+<li>complete the LAN connection parameters:<ul>
+<li>IP - a free address in your network, e.g. 192.168.1.50</li>
+<li>SUBMASK - subnet mask, e.g. 255.255.255.0</li>
+<li>GATEWAY - default gateway, e.g. 192.168.1.1</li>
+<li>PORT - port number, default 18190</li>
+</ul>
+</li>
+<li>click SAVE &amp; APPLY</li>
+<li>change CONNECTION TYPE to LAN</li>
+<li>click SAVE &amp; APPLY</li>
+<li>now you can disconnect the USB cable</li>
+</ul>
+<h1 id="screenshots">Screenshots</h1>
+<p><img src="https://korc.code-zz.eu/g/zrzuty/www___03.03.2025_212244.jpg" alt="Screen Main">
+<img src="https://korc.code-zz.eu/g/zrzuty/www___03.03.2025_212246.jpg" alt="Screen Config"></p>
+</body>
+</html>
