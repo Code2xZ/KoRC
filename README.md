@@ -21,7 +21,7 @@ The program requires at least .NET Framework version 4.7.2 to run. In Windows ve
 
 The program is released under a freeware license.
 You can use it for free, and if you like it, please consider making a donation to its development.
-[Make a donation](https://korc.code-zz.eu/datki)
+[Make a donation](https://korc.zozo.net.pl/datki)
 
 # Manual
 
